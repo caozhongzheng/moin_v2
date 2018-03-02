@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_title_grey"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar_height"
+        android:background="@color/common_white">
+
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:paddingTop="@dimen/margin_smaller"
+            android:src="@drawable/back_gray" />
+
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/tv_right_txt"
+            android:layout_toRightOf="@+id/back_iv"
+            android:background="@drawable/search_shape"
+            android:drawableLeft="@drawable/main_search"
+            android:drawablePadding="@dimen/margin_normal"
+            android:hint="@string/wasai_search_ip_hint"
+            android:padding="@dimen/margin_normal"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/common_title_grey"
+            android:textSize="@dimen/common_title_size"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/clear_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/search_et"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:paddingTop="@dimen/margin_smaller"
+            android:src="@drawable/btn_cancle"
+            android:text="@android:string/cancel"
+            android:textSize="@dimen/text_14"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/search_txt"
+            style="@style/tag_btn_solid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/margin_smaller"
+            android:paddingTop="@dimen/margin_smaller"
+            android:layout_marginRight="@dimen/margin_smaller"
+            android:text="@android:string/search_go"
+            android:textSize="@dimen/text_14" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_text_grey">
+
+        </View>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ExpandableListView
+            android:id="@+id/hot_tag_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_grey"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/common_grey"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"></ExpandableListView>
+
+        <LinearLayout
+            android:id="@+id/loading_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99595757"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

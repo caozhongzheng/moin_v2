@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/header_padding_left"
+        android:layout_marginRight="@dimen/header_padding_right"
+        android:padding="@dimen/margin_normal"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_tag_no"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_btn_height"
+            android:text="@android:string/cancel"
+            android:layout_alignParentLeft="true"
+            style="@style/common_button"
+            android:background="@drawable/tag_btn_solid_grey_bg" />
+        <Button
+            android:id="@+id/btn_tag_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_btn_height"
+            android:text="@android:string/ok"
+            android:layout_alignParentRight="true"
+            style="@style/common_button" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_grey"/>
+
+    <GridView
+        android:id="@+id/grid_tag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_marginBottom="@dimen/margin_bigger"
+        android:layout_marginTop="@dimen/margin_bigger"
+        android:layout_marginLeft="@dimen/header_padding_left"
+        android:layout_marginRight="@dimen/header_padding_right"
+        android:padding="@dimen/margin_normal"></GridView>
+</LinearLayout>

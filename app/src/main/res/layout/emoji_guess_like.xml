@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:id="@+id/guess_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/header_padding_left"
+        android:paddingRight="@dimen/header_padding_right"
+        android:paddingTop="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_normal">
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/register_line"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/text_guess_like"
+            android:text="猜你喜欢"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/common_text_title"
+            android:layout_alignParentLeft="false"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_normal" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@color/common_white"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/header_padding_left"
+        android:layout_marginRight="@dimen/header_padding_right"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/guess_like">
+
+        <com.moinapp.wuliao.commons.ui.AsyncImageView
+            android:id="@+id/image_guess_like1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_smaller" />
+
+        <com.moinapp.wuliao.commons.ui.AsyncImageView
+            android:id="@+id/image_guess_like2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_smaller" />
+    </LinearLayout>
+</RelativeLayout>

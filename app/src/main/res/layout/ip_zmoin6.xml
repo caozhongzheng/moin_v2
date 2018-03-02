@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/header_padding_left"
+    android:paddingRight="@dimen/header_padding_right"
+    android:paddingTop="@dimen/margin_bigger">
+
+    <include android:id="@+id/header"
+        layout="@layout/ip_homepg_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            layout="@layout/ip_homepg_row" />
+
+        <include android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_big"
+            layout="@layout/ip_homepg_row" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

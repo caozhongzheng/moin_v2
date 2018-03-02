@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="common_white">#ffffff</color>
+    <color name="common_black">#000000</color>
+    <color name="common_text_grey">#9fa0a0</color>
+    <color name="common_text_main">#ea6093</color>
+    <!--<color name="common_white_shadow">#414141</color>-->
+    <!--<color name="common_white_disabled">#e7e7e7</color>-->
+    <!--&lt;!&ndash; For main texts &ndash;&gt;-->
+    <!--<color name="common_dark">#3d5562</color>-->
+    <!--<color name="common_dark_shadow">#dedede</color>-->
+    <!--<color name="common_dark_disabled">#9aa7af</color>-->
+    <!--&lt;!&ndash; For secondary texts &ndash;&gt;-->
+    <!--<color name="common_grey">#8496a0</color>-->
+    <!--<color name="common_grey_disabled">#aabbc4</color>-->
+    <!--&lt;!&ndash; For danger cases, such as virus, file delete... &ndash;&gt;-->
+    <!--<color name="common_red">#e62f2f</color>-->
+    <!--&lt;!&ndash; For warning cases, such as trashes... &ndash;&gt;-->
+    <!--<color name="common_yellow">#f1930d</color>-->
+    <!--&lt;!&ndash; For safe cases &ndash;&gt;-->
+    <!--<color name="common_green">#60990c</color>-->
+    <!--&lt;!&ndash; For suggestions &ndash;&gt;-->
+    <!--<color name="common_blue">#4b8bbd</color>-->
+    <color name="tab_indicator_text_selected">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#aac5d7</color>
+    <!--<color name="page_viewer_margin_color">#007800</color>-->
+    <color name="text_store_column_title_selected">#11cad2</color>
+    <color name="list_loading_color">#def3f5</color>
+    <color name="push_notification_expanded_seperator_color">#55ffffff</color>
+    <color name="push_notification_expanded_background">#d91199ee</color>
+    <color name="store_tab_text_sel">#a2a6a9</color>
+    <color name="btn_orange">#FF6C04</color>
+    <color name="half_color">#55000000</color>
+    <color name="push_notification_expanded_highlight_color">#55ffffff</color>
+    <color name="md_defaultBackground">#FF555555</color>
+    <color name="default_rim_color">#ffffff</color>
+    <color name="circle_color">#32d636</color>
+
+
+    <color name="head_layout_bg_color">#bf0d52</color>
+    <color name="agreement_textColor">#1111aa</color>
+
+    <color name="app_textColor_light">#898989</color>
+    <color name="line_bg">#dddddd</color>
+    <!-- 登录 -->
+    <color name="title_color">#171717</color>
+    <color name="login_head_line_color">#d5d5d5</color>
+    <color name="login_bg">#352f44</color>
+
+    <!-- 个人信息 -->
+    <color name="information_textColor_dark">#171717</color>
+    <color name="information_line_bg">#d8d8d8</color>
+    <color name="information_item_bg_color">#f1f1f1</color>
+
+    <!-- 用户资料 -->
+    <color name="userdata_bg">#ececec</color>
+    <color name="divide_line_color">#dfdfdf</color>
+    <color name="chat_bg">#efe5fe</color>
+    <color name="dialog_btn_bg_progress">#eaeaea</color>
+    <color name="dialog_btn_sure_bg">#e13962</color>
+    <color name="dialog_cancel_bg">#d5d5d5</color>
+    <color name="pink_text">#ff75b3</color>
+
+    <!--底部tab-->
+    <color name="tab_text">#a1a5a8</color>
+    <color name="tab_text_sel">#a2a6a9</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="common_grey">#f3f3f3</color>
+    <color name="common_title_grey">#595757</color>
+
+    <!--高仿微信表情-->
+    <color name="litte_red">#EF3B4F</color>
+    <color name="black">#000000</color>
+    <color name="base_shallow_black">#818181</color>
+    <color name="text_tab_title_def">@color/base_shallow_black</color>
+    <color name="base_bg_gray">#EBEBEB</color>
+
+    <color name="edit_text">@color/black</color>
+    <color name="edit_hint_text">#ffacacac</color>
+    <color name="register_line_bg">#876876</color>
+    <color name="emoji_pop_bg">#242424</color>
+
+    0xfff16364,
+    0xfff58559,
+    0xfff9a43e,
+    0xffe4c62e,
+    0xff67bf74,
+    0xff59a2be,
+    0xff2093cd,
+    0xffad62a7,
+    0xff805781
+    ));
+    MATERIAL = create(Arrays.asList(
+    0xffe57373,
+    0xfff06292,
+    0xffba68c8,
+    0xff9575cd,
+    0xff7986cb,
+    0xff64b5f6,
+    0xff4fc3f7,
+    0xff4dd0e1,
+    0xff4db6ac,
+    0xff81c784,
+    0xffaed581,
+    0xffff8a65,
+    0xffd4e157,
+    0xffffd54f,
+    0xffffb74d,
+    0xffa1887f,
+    0xff90a4ae
+    <color name="f16364">#f16364</color>
+    <color name="f58559">#f58559</color>
+    <color name="f9a43e">#f9a43e</color>
+    <color name="e57373">#e57373</color>
+
+    <!--cosplay-->
+    <color name="photoAlbum">#ff0000</color>
+    <color name="cosplay_background">#3D3741</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="search_group_grey">#ababab</color>
+
+</resources>

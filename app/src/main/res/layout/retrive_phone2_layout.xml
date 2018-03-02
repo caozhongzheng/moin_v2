@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_white">
+
+    <!--password1 edittext-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_password"
+            android:layout_marginLeft="30dp" />
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/retrieve_password_hint"
+            android:digits="@string/regist_password_digits"
+            android:maxLength="@integer/password_max_len"
+            android:singleLine="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/common_title_size"
+            android:textColor="@color/common_text_grey" />
+
+    </LinearLayout>
+    <View style="@style/divide_line"
+        android:layout_marginTop="@dimen/margin_big" />
+
+    <!--password2 edittext-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="@dimen/margin_normal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_password"
+            android:layout_marginLeft="30dp" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_toRightOf="@+id/register_code_img"
+            android:hint="@string/retrieve_password_sure_hint"
+            android:digits="@string/regist_password_digits"
+            android:maxLength="@integer/password_max_len"
+            android:singleLine="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/common_title_size"
+            android:textColor="@color/common_text_grey" />
+    </LinearLayout>
+
+    <View style="@style/divide_line"
+        android:layout_marginTop="@dimen/margin_big" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="right"
+        android:onClick="onClick"
+        android:text="@string/regist_password_tip"
+        android:textColor="@color/common_text_grey"
+        android:textSize="10sp"
+        android:layout_marginTop="@dimen/margin_normal" />
+
+    <TextView
+        android:id="@+id/retrive_sure_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_normal"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/retrieve_sure"
+        android:textColor="@color/common_text_main"
+        android:textSize="@dimen/common_title_size"
+        android:layout_marginLeft="@dimen/header_padding_left"
+        android:layout_marginRight="@dimen/header_padding_right" />
+
+
+</LinearLayout>

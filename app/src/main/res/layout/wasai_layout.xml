@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/common_title_grey"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/loading_layout" />
+
+    <include layout="@layout/ic_header" />
+
+    <com.moinapp.wuliao.commons.ui.XListView
+        android:id="@+id/emoji_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:background="@color/common_grey"
+        android:paddingTop="@dimen/margin_normal">
+
+    </com.moinapp.wuliao.commons.ui.XListView>
+</LinearLayout>

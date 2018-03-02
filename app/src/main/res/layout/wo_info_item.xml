@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/header_padding_left"
+    android:layout_marginRight="@dimen/header_padding_right">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_normal">
+
+        <ImageView
+            android:id="@+id/wo_cover"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/default_img"
+            android:background="@drawable/tag_btn_solid_bg"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_toRightOf="@+id/wo_cover"
+            android:layout_marginRight="40dp"
+            android:layout_alignTop="@+id/wo_cover"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/wo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_title_size"
+                android:text="窝窝名称"
+                android:textColor="@color/common_title_grey" />
+
+            <LinearLayout
+                android:id="@+id/wo_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关注：4w"
+                    android:textSize="@dimen/abc_text_size_smaller_comment"
+                    android:textColor="@color/common_text_main" />
+
+                <TextView
+                    android:id="@+id/post_number"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帖子：321w"
+                    android:textSize="@dimen/abc_text_size_smaller_comment"
+                    android:textColor="@color/common_text_main" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wo_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/abc_text_size_smaller_comment"
+                    android:text="标签："
+                    android:textColor="@color/common_text_grey" />
+
+                <LinearLayout
+                    android:id="@+id/wo_tags_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/wo_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:text="窝窝描述....."
+                android:layout_marginTop="1dp"
+                android:singleLine="true"
+                android:textColor="@color/common_title_grey" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/wo_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_gray"
+            android:visibility="gone"
+            android:paddingRight="@dimen/margin_normal"
+            android:paddingLeft="@dimen/margin_normal" />
+
+        <!--这是窝窝首页上用到的关注图片，在未关注的窝列表中要显示 -->
+        <ImageView
+            android:id="@+id/image_attention"
+            android:src="@drawable/btn_add_yellow"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/margin_normal"
+            android:paddingRight="@dimen/margin_normal"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

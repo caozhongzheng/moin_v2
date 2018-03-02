@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margin_bigger"
+    android:background="@color/common_white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_normal">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/author_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/default_img"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/margin_normal" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/information_icon_bg"
+            android:layout_marginRight="@dimen/margin_normal" />
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/abc_text_size_smaller_comment"
+            android:layout_toRightOf="@+id/author_avatar"
+            android:text="@string/ip_author" />
+
+        <TextView
+            android:id="@+id/author_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/author_name"
+            android:text="@string/ip_banzhu"
+            android:layout_alignParentEnd="false"
+            android:textSize="@dimen/abc_text_size_smaller_comment"
+            android:layout_toRightOf="@+id/author_name"
+            android:layout_marginLeft="@dimen/margin_normal"
+            style="@style/tag_btn_solid"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author_name"
+            android:text="@string/ip_time"
+            android:layout_alignParentEnd="false"
+            android:textSize="@dimen/abc_text_size_smaller_comment"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/common_text_grey"
+            android:layout_alignLeft="@+id/author_name" />
+
+        <TextView
+            android:id="@+id/floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="楼主"
+            android:textColor="@color/common_text_grey"
+            android:textSize="@dimen/abc_text_size_small_material" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_referral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:background="@color/common_grey"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:padding="@dimen/margin_normal">
+
+        <TextView
+            android:id="@+id/referral_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复几楼:"
+            style="@style/common_text_content_light" />
+
+        <TextView
+            android:id="@+id/referral_meta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="引用摘要"
+            style="@style/common_text_content_light"
+            android:layout_marginLeft="@dimen/margin_normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/post_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_tz_desc"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:autoLink="phone|email|web"
+        style="@style/common_text_poster" />
+
+    <ImageView
+        android:id="@+id/post_emj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minWidth="@dimen/emj_min_width"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:src="@drawable/default_img" />
+
+    <ImageView
+        android:id="@+id/post_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:maxHeight="210dp"
+        android:src="@drawable/default_img" />
+
+    <!-- 图特别高时右下角显示长图字样，然后截取图片的上部分缩放显示，并且图片显示最高200dp
+    <FrameLayout
+        android:id="@+id/ry_post_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:maxHeight="210dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/post_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_img" />
+
+        <TextView
+            android:id="@+id/post_images_longpic"
+            style="@style/common_text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:background="#BCB5FF"
+            android:singleLine="true"
+            android:text="@string/wowo_longpic"
+            android:textColor="@color/common_black"
+            android:visibility="visible" />
+
+    </FrameLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/ly_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_normal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_reply"
+            android:layout_marginRight="@dimen/margin_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/wowo_huifu"
+            style="@style/common_text_content"
+            android:textColor="@color/common_text_main" />
+    </LinearLayout>
+
+</LinearLayout>

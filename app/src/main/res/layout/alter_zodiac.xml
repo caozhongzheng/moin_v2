@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_title_grey"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/common_white">
+
+        <TextView
+            android:id="@+id/alter_zodiac_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/header_padding_left"
+            android:background="@drawable/dialog_btn_bg_right"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:text="@android:string/cancel"
+            style="@style/common_text_content" />
+
+        <TextView
+            android:id="@+id/title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/i_zodiac"
+            style="@style/common_text_tab" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/common_grey">
+
+    <ListView
+        android:id="@+id/zodiac_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/header_padding_left"
+        android:layout_marginRight="@dimen/header_padding_right"
+        android:layout_marginTop="@dimen/margin_big"
+        android:background="@color/common_white" />
+
+    </LinearLayout>
+</LinearLayout>

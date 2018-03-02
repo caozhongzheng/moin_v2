@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/common_white">
+
+    <TextView
+        style="@style/common_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_gender"
+        android:textColor="@color/common_text_grey"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_normal" />
+
+    <View style="@style/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alter_sex_male"
+            style="@style/information_sex_popwindow_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/male" />
+
+        <ImageView
+            android:id="@+id/alter_sex_male_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_select_light"
+            android:visibility="gone"
+            android:layout_marginRight="60dp" />
+
+        <View
+            style="@style/divide_line"
+            android:layout_below="@+id/alter_sex_male"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alter_sex_female"
+            style="@style/information_sex_popwindow_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/female" />
+
+        <ImageView
+            android:id="@+id/alter_sex_female_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/icon_select_light"
+            android:visibility="gone" />
+
+        <View
+            style="@style/divide_line"
+            android:layout_below="@+id/alter_sex_female"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alter_sex_cancel"
+        style="@style/information_sex_popwindow_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@android:string/cancel" />
+
+</LinearLayout>

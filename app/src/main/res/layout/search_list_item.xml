@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:minHeight="60dp"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_normal"
+    android:paddingRight="@dimen/margin_normal">
+
+    <TextView
+        android:id="@+id/num"
+        style="@style/common_text_title"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/margin_normal"
+        android:text="1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/common_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/clear_history"
+        android:layout_toRightOf="@+id/num"
+        android:paddingLeft="@dimen/margin_normal"
+        android:singleLine="true"
+        android:text="搜索历史">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/clear_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:src="@drawable/btn_cancle" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        style="@style/divide_line">
+
+    </View>
+</RelativeLayout>

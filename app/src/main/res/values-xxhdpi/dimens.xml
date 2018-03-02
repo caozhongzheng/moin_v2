@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tutorial_post4_ml">7dp</dimen>
+    <dimen name="tutorial_post4_mb">22dp</dimen>
+    <dimen name="tutorial_postdetail_mb">25dp</dimen>
+    <dimen name="tutorial_moin_clip_mt">265dp</dimen>
+    <dimen name="tutorial_hot_banner_mt">272dp</dimen>
+</resources>

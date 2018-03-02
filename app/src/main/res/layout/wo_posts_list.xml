@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_viewpager_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <com.moinapp.wuliao.commons.ui.XListView
+        android:id="@+id/lv_list"
+        style="@style/common_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+    <!--
+    <include layout="@layout/moin_column_load_failed" />
+    -->
+</LinearLayout>

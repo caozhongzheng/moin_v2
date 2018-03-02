@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/common_title_grey">
+
+
+    <include layout="@layout/loading_layout" />
+
+    <include
+        android:id="@+id/ic_header"
+        layout="@layout/ic_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_normal"
+        android:background="@color/common_grey">
+
+        <GridView
+            android:id="@+id/id_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipChildren="true"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/margin_normal"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/margin_big"
+            android:layout_marginBottom="@dimen/favoriate_ip_toobar_h"
+            android:layout_marginLeft="@dimen/header_padding_left"
+            android:layout_marginRight="@dimen/header_padding_right" />
+
+        <RelativeLayout
+            android:id="@+id/id_bottom_ly"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/favoriate_ip_toobar_h"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_white"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/id_select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/id_select_all"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/select_all"
+                android:clickable="true"
+                android:textColor="@android:color/holo_blue_bright"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/id_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:clickable="false"
+                android:text="@string/delete"
+                style="@style/common_button"
+                android:layout_margin="@dimen/margin_normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

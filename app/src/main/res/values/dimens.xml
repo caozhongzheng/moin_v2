@@ -1,0 +1,109 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- For buttons -->
+    <!-- For list texts (top line) -->
+    <!-- For list texts (bottom line), summary texts, icon texts, descriptions, tag texts -->
+    <dimen name="theme_viewpager_item_height">341.5dp</dimen>
+
+    <dimen name="t_18">18sp</dimen>
+    <dimen name="t_20">20sp</dimen>
+
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_big">12dp</dimen>
+    <dimen name="margin_bigger">15dp</dimen>
+
+    <!-- pop -->
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="padding_vertical">10dp</dimen>
+
+    <!-- 登录 -->
+    <dimen name="login_edittext_margin_horizontal">15dp</dimen>
+    <dimen name="login_edittext_margin_top_bottom">22dp</dimen>
+    <!-- 评论列表 -->
+    <dimen name="comment_avatar">48dp</dimen>
+    <!-- 个人信息 -->
+    <dimen name="arrow_padding">15dp</dimen>
+    <dimen name="dialog_title_height">38dp</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+    <dimen name="dialog_height">180dp</dimen>
+    <!--iplist hot banner-->
+    <!--这个高度是片花剧照页第一个片花的高度，此处和ip首页中banner的高度设为一样的了-->
+    <dimen name="ip_hot_banner_height">312dp</dimen>
+    <!--这个高度是ip详情页顶部电影IP名称距离顶部的高度-->
+    <dimen name="ip_ipdetail_height">222dp</dimen>
+    <dimen name="header_padding_left">8dp</dimen>
+    <dimen name="header_padding_right">8dp</dimen>
+    <dimen name="ip_homepg_row_w">110dp</dimen>
+    <dimen name="ip_homepg_row_h">156dp</dimen>
+    <dimen name="ip_homepg_row_divider_w">2dp</dimen>
+    <!--ip详情页中收藏和分享操作栏的高度-->
+    <dimen name="option_h">30dp</dimen>
+
+    <dimen name="clip_item_hmax">140dp</dimen>
+    <dimen name="clip_item_hmin">100dp</dimen>
+    <dimen name="title_text_right_padding">10dp</dimen>
+    <dimen name="title_item_left_padding">10dp</dimen>
+    <dimen name="login_image_top">40dp</dimen>
+    <dimen name="login_image_bottom">80dp</dimen>
+    <!--这个高度是ip详情页表情tab的表情grid的高度，计算方法是屏幕宽度360dp*(2/3两行)+10dp水平horizontalSpaceing-->
+    <dimen name="ipdetail_emj_grid_h">250dp</dimen>
+    <dimen name="common_title_size">16sp</dimen>
+    <dimen name="common_tab_title_size">18sp</dimen>
+    <dimen name="abc_text_size_smaller_comment">12sp</dimen>
+
+    <!--选择图片中下方操作栏的高度-->
+    <dimen name="photo_toobar_h">50dp</dimen>
+    <dimen name="photo_add_w">90dp</dimen>
+    <dimen name="photo_add_h">120dp</dimen>
+
+
+    <!--高仿微信表情-->
+    <dimen name="dimension_50">50dp</dimen>
+
+    <dimen name="common_bar_height">@dimen/dimension_50</dimen>
+
+    <dimen name="margin_nomal">10dp</dimen>
+    <dimen name="margin_middle">15dp</dimen>
+
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+
+    <dimen name="text_nomal">@dimen/text_14</dimen>
+    <dimen name="text_big">@dimen/text_17</dimen>
+    <dimen name="margin_smaller">4dp</dimen>
+    <dimen name="ip_details_smallest">11sp</dimen>
+    <dimen name="mine_margin_left">5dp</dimen>
+    <dimen name="mine_margin_right">5dp</dimen>
+
+    <dimen name="favoriate_ip_toobar_h">50dp</dimen>
+    <dimen name="mypost_header_margin">60dp</dimen>
+    <dimen name="list_item_height">25dp</dimen>
+
+    <!--cosplay-->
+    <dimen name="cosplay_type_cell_space">20dp</dimen>
+
+    <dimen name="cosplay_type_cell_width">80dp</dimen>
+    <dimen name="cosplay_type_cell_height">110dp</dimen>
+
+    <dimen name="cosplay_item_cell_width">68dp</dimen>
+    <dimen name="cosplay_item_cell_height">68dp</dimen>
+
+     <dimen name="common_btn_height">36dp</dimen>
+    <dimen name="emj_min_width">300dp</dimen>
+    <dimen name="cosplaysharecolorspace">12dp</dimen>
+    <dimen name="common_divider_height">25dp</dimen>
+    <dimen name="common_btn_width">60dp</dimen>
+    <!--窝窝帖子页title的左右margin-->
+    <dimen name="wowo_post_margin_left">18dp</dimen>
+    <dimen name="wowo_post_margin_right">27dp</dimen>
+    <!--窝窝发帖回复时，分享时表情展示的大小-->
+    <dimen name="emj_dialog_width">300dp</dimen>
+    <dimen name="emj_dialog_height">300dp</dimen>
+    <dimen name="ip_wowo_view_h">350dp</dimen>
+
+</resources>

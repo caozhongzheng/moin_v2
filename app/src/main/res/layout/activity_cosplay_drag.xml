@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@color/common_grey">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="matrix"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/include">
+    </ImageView>
+
+
+    <include layout="@layout/ic_header"
+        android:id="@+id/include" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/red"
+        />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:background="@color/red"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/image_edit"
+        android:background="@color/common_white"
+        android:layout_alignParentBottom="true"
+        android:focusable="false" >
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+

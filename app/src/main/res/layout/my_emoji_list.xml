@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/loading_layout"/>
+    <ListView
+        android:id="@+id/emoji_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/header_padding_left"
+        android:layout_marginRight="@dimen/header_padding_right"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_weight="1"
+        android:cacheColorHint="@null"
+        android:clickable="false"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/margin_big"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:footerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:smoothScrollbar="true" />
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/favoriate_ip_toobar_h"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@color/common_white">
+
+        <CheckBox
+            android:id="@+id/id_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_select_all"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/select_all"
+            android:textColor="@android:color/holo_blue_bright"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/id_delete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/delete"
+            style="@style/common_button"
+            android:layout_margin="@dimen/margin_normal" />
+    </RelativeLayout>
+</LinearLayout>

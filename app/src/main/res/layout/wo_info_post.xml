@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/common_grey"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/loading_layout"/>
+    <com.moinapp.wuliao.commons.ui.XListView
+        android:id="@+id/post_list"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        style="@style/common_list"
+        android:layout_height="wrap_content">
+    </com.moinapp.wuliao.commons.ui.XListView>
+
+</LinearLayout>

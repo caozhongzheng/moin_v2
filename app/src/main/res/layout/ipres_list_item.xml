@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ipres_icon"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerInside"
+            android:src="@color/common_black" />
+
+        <TextView
+            android:id="@+id/ipres_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ipres_icon"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@null"
+            android:textColor="@color/agreement_textColor"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ipres_type"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/ipres_icon"
+            android:layout_alignTop="@+id/ipres_icon"
+            android:src="@drawable/default_img" />
+    </RelativeLayout>
+
+</LinearLayout>

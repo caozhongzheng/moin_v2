@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:paddingTop="@dimen/margin_normal"
+    android:paddingBottom="@dimen/margin_normal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        style="@style/common_text_content_light"
+        android:id="@+id/owner"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/common_text_content"
+        android:id="@+id/content"
+        android:layout_gravity="center_horizontal" />
+
+    <com.moinapp.wuliao.commons.ui.ExpandableTextView
+        android:id="@+id/taici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        expandableTextView:animAlphaStart="1"
+        expandableTextView:maxCollapsedLines="2">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="0dp"
+            android:background="@android:color/transparent" />
+    </com.moinapp.wuliao.commons.ui.ExpandableTextView>
+</LinearLayout>

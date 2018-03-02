@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ip_homepg_row_h"
+        android:id="@+id/iv"
+        android:background="@color/common_text_grey"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_homep_ipname"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@color/common_white"
+        android:id="@+id/title"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_homep_type"
+        android:textSize="@dimen/abc_text_size_smaller_comment"
+        android:textColor="@color/common_white"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="40dp"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:id="@+id/id_item_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="@dimen/margin_normal"
+        android:clickable="false"
+        android:visibility="gone"
+        android:src="@drawable/icon_unselect"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

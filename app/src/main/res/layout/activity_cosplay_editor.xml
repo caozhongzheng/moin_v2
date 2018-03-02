@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="@color/common_grey"
+    tools:context="com.moinapp.wuliao.modules.cosplay.CosplayEditorActivity"
+    android:id="@+id/activityCosplayEditor">
+
+
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_above="@+id/relativeLayout"-->
+
+
+
+    <include layout="@layout/ic_header"
+        android:id="@+id/include" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/glView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/horizontalScrollView"></LinearLayout>
+
+    <com.moinapp.wuliao.modules.cosplay.CosplayScrollviewH
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/cosplay_editScrollView"
+        android:layout_alignParentBottom="true"
+        android:background="#ffd5d6d7"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="20dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:measureWithLargestChild="false"
+            android:id="@+id/scrollrelative">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cosplayDakaXiu"
+                android:background="@drawable/cosplay_dakaxiu"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@null"
+                android:layout_marginLeft="@dimen/margin_normal" />
+
+        </LinearLayout>
+    </com.moinapp.wuliao.modules.cosplay.CosplayScrollviewH>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cosplay_arrow"
+        android:src="@drawable/cosplay_arrow"
+        android:contentDescription="@null"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_marginTop="-11dp"
+        android:focusable="false" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/horizontalScrollView"
+        android:background="@drawable/cosplay_editmenu"
+        android:layout_above="@+id/cosplay_editScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:measureWithLargestChild="false"
+            android:id="@+id/scrollcellItemrelative" >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/horizontalScrollView"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagEdit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/cosplay_edit_menutag"
+            android:layout_marginBottom="-2dp"
+            android:contentDescription="@null" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/tagEditText"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="-2dp"
+            android:contentDescription="@null"
+            android:adjustViewBounds="false"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cosplay_tagedit" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+

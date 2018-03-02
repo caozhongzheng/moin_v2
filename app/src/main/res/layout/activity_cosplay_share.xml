@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    tools:context="com.moinapp.wuliao.modules.cosplay.CosplayShare_activity"
+    android:id="@+id/activityCosplayShare">
+
+    <include layout="@layout/ic_header"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#d2d1d6ff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/redButton"
+                android:src="@drawable/cosplayshareselectred"
+                android:contentDescription="@null"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yellowButton"
+                android:src="@drawable/cosplayshareselectyellow"
+                android:contentDescription="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/cosplaysharecolorspace"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/greenButton"
+                android:src="@drawable/cosplayshareselectgreen"
+                android:contentDescription="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/cosplaysharecolorspace"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blueButton"
+                android:src="@drawable/cosplayshareselectblue"
+                android:contentDescription="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/cosplaysharecolorspace"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blackButton"
+                android:src="@drawable/cosplayshareselectblack"
+                android:contentDescription="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/cosplaysharecolorspace"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/whiteButton"
+                android:src="@drawable/cosplayshareselectwhite"
+                android:contentDescription="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/cosplaysharecolorspace"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="你是猪"
+        android:id="@+id/displayText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp" />
+
+</RelativeLayout>

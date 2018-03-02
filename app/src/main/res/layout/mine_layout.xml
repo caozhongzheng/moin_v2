@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/common_grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/login_bg">
+
+        <com.moinapp.wuliao.commons.ui.CircularImageView
+            android:id="@+id/avatar"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_centerInParent="true"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/common_white"
+                style="@style/common_text_title"
+                android:text="@string/unlogin"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next_gray"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_normal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/header_padding_left"
+        android:layout_marginRight="@dimen/header_padding_right"
+        android:layout_marginTop="@dimen/margin_big">
+
+        <RelativeLayout
+            android:id="@+id/rl_emj"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/emj_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_emoj_small"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/emj_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/emj_iv"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:text="@string/my_emoji"
+                style="@style/common_text_title" />
+
+            <ImageView
+                android:id="@+id/new_emj_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/emj_tv" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:src="@drawable/next_gray" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_grey" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fip_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_favor"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/ip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/fip_iv"
+                android:text="@string/focus_ip"
+                style="@style/common_text_title" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:src="@drawable/next_gray" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_grey" />
+
+        <RelativeLayout
+            android:id="@+id/rl_wowo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/wowo_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_wowo"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/wowo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/wowo_iv"
+                android:text="@string/tab_wowo"
+                style="@style/common_text_title" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:src="@drawable/next_gray" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_big"
+        android:background="@color/common_white"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/header_padding_right"
+        android:layout_marginLeft="@dimen/header_padding_left">
+
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/setting_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_setup"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/setting_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/setting_iv"
+                android:text="@string/setting"
+                style="@style/common_text_title" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:src="@drawable/next_gray" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

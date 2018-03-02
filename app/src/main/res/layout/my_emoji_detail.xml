@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/common_title_grey">
+
+    <include
+        android:id="@+id/ic_header"
+        layout="@layout/ic_header" />
+
+    <GridView
+        android:padding="@dimen/margin_normal"
+        android:id="@+id/emoji_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:columnWidth="100dp"
+        android:gravity="top"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:fastScrollEnabled="true"
+        android:background="@color/common_grey" />
+
+</LinearLayout>

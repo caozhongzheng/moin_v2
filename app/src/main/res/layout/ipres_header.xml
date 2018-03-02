@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_grey">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/banner_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ip_hot_banner_height">
+
+            <TextView
+                android:id="@+id/ip_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ip_type"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@color/common_white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ip_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:singleLine="true"
+                android:textColor="@color/common_white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/ip_zmoin_homepg"
+        layout="@layout/ip_zmoin6" />
+
+    <include
+        android:id="@+id/ip_zhotest_homepg"
+        layout="@layout/ip_zhot3" />
+
+    <include
+        android:id="@+id/ip_wolist"
+        layout="@layout/ip_wolist" />
+
+
+</LinearLayout>

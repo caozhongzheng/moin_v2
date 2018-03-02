@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoinActivity">
+
+    <ImageView
+        android:id="@+id/splash"
+        android:src="@drawable/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingTop="20dp"
+        android:visibility="gone"/>
+
+    <fragment
+        android:id="@+id/fragement_moin"
+        android:name="com.moinapp.wuliao.modules.ipresource.FragmentIPres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_wasai"
+        android:name="com.moinapp.wuliao.modules.ipresource.FragmentWasai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_wowo"
+        android:name="com.moinapp.wuliao.modules.wowo.FragmentWowo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_mine"
+        android:name="com.moinapp.wuliao.modules.mine.FragmentMine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_grey"
+        />
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/common_white"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/tab_moin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_moin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dockbar_moin"/>
+
+                <TextView
+                    android:id="@+id/text_moin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/tab_moin"
+                    android:textColor="@color/common_title_grey"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginTop="@dimen/margin_smaller" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_wasai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_wasai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dockbar_wasai"/>
+
+                <TextView
+                    android:id="@+id/text_wasai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/tab_wasai"
+                    android:textColor="@color/common_title_grey"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginTop="@dimen/margin_smaller" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/image_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dockbar_cosplay"/>
+
+                <TextView
+                    android:id="@+id/text_cosplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/tab_cosplay"
+                    android:textColor="@color/common_title_grey"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginTop="@dimen/margin_smaller" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_wowo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_wowo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dockbar_wo" />
+
+                <TextView
+                    android:id="@+id/text_wowo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/tab_wowo"
+                    android:textColor="@color/common_title_grey"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginTop="@dimen/margin_smaller" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dockbar_me"/>
+
+                <TextView
+                    android:id="@+id/text_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/tab_mine"
+                    android:textColor="@color/common_title_grey"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginTop="@dimen/margin_smaller" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

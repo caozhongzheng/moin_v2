@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bannerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ip_hot_banner_height"
+        android:layout_margin="0dp"
+        android:visibility="visible">
+
+        <com.moinapp.wuliao.commons.ui.BaseViewPager
+            android:id="@+id/vp_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ip_hot_banner_height" />
+
+        <LinearLayout
+            android:id="@+id/ll_banner_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_banner_error"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ip_hot_banner_height"
+        android:background="@drawable/banner_empty"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:contentDescription="@null"
+            android:visibility="invisible"
+            android:src="@android:drawable/screen_background_light_transparent" />
+        <TextView
+            android:id="@+id/tv_error_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/tab_to_reload"
+            android:textColor="@color/common_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_banner_loading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ip_hot_banner_height"
+        android:background="@drawable/banner_empty"
+        android:gravity="center_horizontal|bottom"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_marginBottom="80dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pb_loading"
+            android:layout_marginLeft="10dp"
+            android:text="@string/loading"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/common_title_size" />
+    </RelativeLayout>
+
+</FrameLayout>

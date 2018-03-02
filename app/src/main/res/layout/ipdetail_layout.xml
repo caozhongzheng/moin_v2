@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <com.moinapp.wuliao.commons.ui.MyScrollView2
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/option_h"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/fade_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ip_hot_banner_height"
+                android:clickable="true"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/ip_ipdetail_height">
+
+                <LinearLayout
+                    android:id="@+id/collapse_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#1000">
+
+                    <ImageView
+                        android:id="@+id/collapse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ip_detail_down"
+                        android:baselineAlignBottom="false"
+                        android:layout_gravity="bottom"
+                        android:paddingBottom="@dimen/margin_small"
+                        android:paddingTop="70dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ip_bg"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/common_white"
+                    android:layout_below="@+id/collapse_bg"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ipheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin_bigger">
+
+                    <RelativeLayout
+                        android:layout_width="124dp"
+                        android:layout_height="188dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/header_padding_left">
+
+                        <TextView
+                            android:id="@+id/haibao_frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:id="@+id/haibao"
+                            android:layout_width="122dp"
+                            android:layout_height="186dp"
+                            android:background="@color/common_white"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/default_img" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/margin_big">
+
+                        <TextView
+                            android:id="@+id/header_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ip_homep_ipname"
+                            android:textSize="@dimen/common_title_size"
+                            android:textColor="@color/common_white"
+                            android:layout_marginTop="@dimen/margin_bigger"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/header_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ip_homep_type"
+                            android:textColor="@color/common_white"
+                            android:textSize="@dimen/abc_text_size_smaller_comment" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="42dp">
+
+                            <!--类型-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ip_type"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:id="@+id/iptag"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey" />
+                            </LinearLayout>
+                            <!--时长-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ip_length"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:id="@+id/iplength"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey" />
+                            </LinearLayout>
+                            <!--演员-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:text="@string/ip_main_actor" />
+
+                                <TextView
+                                    android:id="@+id/actor"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:singleLine="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <!--导演-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:text="@string/ip_director" />
+
+                                <TextView
+                                    android:id="@+id/director"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <!--版权-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ip_banquan"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:singleLine="true"/>
+
+                                <TextView
+                                    android:id="@+id/ipbanquan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey" />
+                            </LinearLayout>
+                            <!--上映日期-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:orientation="horizontal"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ip_showdate"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey"
+                                    android:singleLine="true" />
+
+                                <TextView
+                                    android:id="@+id/ipshowdate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/ip_details_smallest"
+                                    android:textColor="@color/common_text_grey" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ipinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ipheader"
+                    android:background="@color/common_white"
+                    android:orientation="vertical">
+
+                    <com.moinapp.wuliao.commons.ui.ExpandableTextView
+                        android:id="@+id/shortcut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        expandableTextView:animAlphaStart="1"
+                        expandableTextView:maxCollapsedLines="3"
+                        android:background="@color/common_white">
+
+                        <TextView
+                            android:id="@id/expandable_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/common_title_grey"
+                            android:textSize="@dimen/abc_text_size_small_material"
+                            android:text="intro"
+                            android:lineSpacingMultiplier="1.5" />
+
+                        <ImageButton
+                            android:id="@id/expand_collapse"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:background="@android:color/transparent" />
+
+                    </com.moinapp.wuliao.commons.ui.ExpandableTextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/common_grey" />
+
+                    <!--表情 详情 窝窝-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/common_white"
+                        android:paddingTop="@dimen/margin_big"
+                        android:paddingBottom="@dimen/margin_normal">
+
+                        <TextView
+                            android:id="@+id/t_emoji"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/ip_emoji"
+                            android:textColor="@color/common_text_main"
+                            android:textSize="@dimen/common_title_size" />
+
+                        <TextView
+                            android:id="@+id/t_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/ip_detail"
+                            android:textColor="@color/common_title_grey"
+                            android:textSize="@dimen/common_title_size" />
+
+                        <TextView
+                            android:id="@+id/t_wowo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/tab_wowo"
+                            android:textColor="@color/common_title_grey"
+                            android:textSize="@dimen/common_title_size" />
+                    </LinearLayout>
+
+                    <include
+                        android:id="@+id/r_cursor"
+                        layout="@layout/tvcursor" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divide_line_color" />
+
+                    <!--表情布局-->
+                    <LinearLayout
+                        android:id="@+id/emoji_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:background="@color/common_grey"
+                        android:paddingLeft="@dimen/header_padding_left"
+                        android:paddingRight="@dimen/header_padding_right">
+
+                        <TextView
+                            android:id="@+id/emoji_in_production"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/in_production"
+                            android:visibility="gone"/>
+
+                        <RelativeLayout
+                            android:id="@+id/emoji_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_normal"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="3dp"
+                                android:layout_height="15dp"
+                                android:id="@+id/imageView"
+                                android:layout_alignParentTop="false"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/margin_big"
+                                android:background="@drawable/register_line" />
+
+                            <TextView
+                                android:id="@+id/emoji_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/common_title_grey"
+                                android:textSize="@dimen/common_title_size"
+                                android:text="@string/ip_homep_ipname"
+                                android:layout_toRightOf="@+id/imageView" />
+
+                            <TextView
+                                android:id="@+id/emoji_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/common_text_main"
+                                android:text="@string/ip_more" />
+
+                        </RelativeLayout>
+
+                        <com.moinapp.wuliao.commons.ui.MyGridView
+                            android:id="@+id/emoji_grid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:cacheColorHint="@color/transparent"
+                            android:columnWidth="100dp"
+
+                            android:gravity="top"
+                            android:horizontalSpacing="4dp"
+                            android:listSelector="@color/transparent"
+                            android:numColumns="3"
+                            android:scrollbars="none"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="4dp" />
+
+                    </LinearLayout>
+
+                    <!--详情布局-->
+                    <LinearLayout
+                        android:id="@+id/detail_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/dimension_50"
+                        android:background="@color/common_grey"
+                        android:paddingRight="@dimen/header_padding_right"
+                        android:paddingLeft="@dimen/header_padding_left">
+
+                        <!--导演,演员-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/common_white"
+                            android:layout_marginTop="@dimen/margin_big"
+                            android:padding="@dimen/margin_normal"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_normal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    style="@style/common_text_content_light"
+                                    android:text="@string/ip_tag" />
+
+                                <TextView
+                                    android:id="@+id/iptag2"
+                                    style="@style/common_text_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_normal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="60dp"
+                                    android:layout_height="wrap_content"
+                                    style="@style/common_text_content_light"
+                                    android:text="@string/ip_actor" />
+
+                                <TextView
+                                    android:id="@+id/actor2"
+                                    style="@style/common_text_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/word_bg"
+                            android:layout_marginTop="@dimen/margin_big"
+                            android:padding="@dimen/margin_normal"
+                            android:orientation="vertical">
+
+                            <!--演员台词-->
+                            <com.moinapp.wuliao.commons.ui.MyListView
+                                android:id="@+id/words_lv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/margin_big"
+                                android:divider="@drawable/dot_line"
+                                android:dividerHeight="1dp"
+                                android:cacheColorHint="@color/transparent"
+                                />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="@dimen/margin_normal"
+                                android:background="@color/common_grey" />
+
+                            <Button
+                                android:id="@+id/show_all_words"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:text="@string/show_all_words"
+                                android:clickable="true"
+                                android:visibility="visible"
+                                android:background="@color/transparent"
+                                android:textColor="@color/common_text_grey"
+                                android:textSize="@dimen/abc_text_size_small_material" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--窝窝布局-->
+                    <LinearLayout
+                        android:id="@+id/wowo_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/ip_wowo_view_h"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:background="@color/common_grey"
+                        android:paddingRight="@dimen/header_padding_right"
+                        android:paddingLeft="@dimen/header_padding_left">
+
+                        <include
+                            android:id="@+id/wowo_header"
+                            layout="@layout/ip_wolist" />
+
+                        <include
+                            android:id="@+id/wowo_tz"
+                            layout="@layout/wowo_tz_list_item" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+    </com.moinapp.wuliao.commons.ui.MyScrollView2>
+
+</LinearLayout>

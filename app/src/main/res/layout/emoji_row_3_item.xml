@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ip_homepg_row_h"
+    android:padding="5dp"
+    >
+
+    <com.moinapp.wuliao.commons.ui.AsyncImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/emoji_image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/default_img"
+        android:clickable="true"
+        />
+</LinearLayout>

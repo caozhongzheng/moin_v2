@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ic_header"
+        layout="@layout/ic_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/id_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipChildren="true"
+            android:gravity="center"
+            android:horizontalSpacing="3dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dip"
+            android:layout_marginBottom="@dimen/photo_toobar_h"
+            />
+
+        <RelativeLayout
+            android:id="@+id/id_bottom_ly"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_toobar_h"
+            android:layout_alignParentBottom="true"
+            android:background="#e0000000"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/id_choose_dir"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:clickable="true"
+                android:text="@string/all_photo"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/id_total_count"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/id_choose_dir"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="0张"
+                android:clickable="false"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/id_select_count"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:clickable="false"
+                android:text="0/5"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

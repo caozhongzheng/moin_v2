@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:touchscreenBlocksFocus="true"
+    android:nestedScrollingEnabled="false"
+    android:clickable="true"
+    android:id="@+id/cosplay_typecell_layout">
+
+    <RelativeLayout
+        android:layout_width="@dimen/cosplay_type_cell_width"
+        android:layout_height="@dimen/cosplay_type_cell_height"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_alignParentEnd="false"
+        android:background="#ff363636"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="4.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/cosplay_next"
+            android:id="@+id/cosplay_type_cell_text"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cosplay_type_cell_image"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cosplay_type_cell_image"
+            android:contentDescription="@null"
+            android:background="@drawable/cosplay_cloth"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white">
+
+    <RelativeLayout
+        android:id="@+id/rl_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.moinapp.wuliao.commons.ui.BaseViewPager
+            android:id="@+id/vp_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_guide_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/enter_moin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimension_50"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="-52dp"
+        android:background="@drawable/btn_welcome_start"
+        android:clickable="false"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/enter_moin_2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimension_50"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/dimension_50"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="                                  " />
+
+</FrameLayout>
+

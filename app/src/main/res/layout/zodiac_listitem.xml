@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/margin_bigger"
+    android:paddingBottom="@dimen/margin_bigger"
+    android:paddingRight="@dimen/margin_normal"
+    android:paddingLeft="@dimen/margin_normal">
+
+    <TextView
+        android:id="@+id/zodiac_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        style="@style/common_text_title" />
+
+    <ImageView
+        android:id="@+id/zodiac_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_select_light"
+        android:visibility="invisible"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/zodiac_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/zodiac_current"
+        android:layout_centerVertical="true"
+        style="@style/common_text_title_light" />
+
+</RelativeLayout>

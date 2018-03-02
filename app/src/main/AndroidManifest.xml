@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.moinapp.wuliao"
+    android:versionCode="10"
+    android:versionName="2.0.00.00">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="16" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Timetodo">
+
+        <!-- 在manifest中添加打包的渠道代码，以便在build.grqdle中使用-->
+        <!--
+        <meta-data
+            android:name="MOIN_CHANNEL"
+            android:value="${CHANNEL_VALUE}"/>
+                                                -->
+        <!--高德地图AppKey-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="2478f8c41f592e8f4dbadd30e7507476" />
+
+        <!-- 友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55652d3367e58e7d8a005bcc"></meta-data>
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+
+        </activity>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103489550" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <!--main, ip-->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+        </activity>
+
+        <activity
+            android:name=".MoinActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+
+        </activity>
+
+        <activity
+            android:name=".modules.ipresource.IPMoinClipActivity"
+            android:label="@string/ip_clip"
+            android:theme="@style/Theme.Timetodo">
+
+        </activity>
+
+
+        <activity android:name=".modules.ipresource.IPResourceListActivity"></activity>
+
+        <activity android:name=".modules.ipresource.EmojiResourceActivity"></activity>
+
+        <activity android:name=".modules.ipresource.StillsViewPagerActivity"></activity>
+
+        <activity
+            android:name=".modules.ipresource.EmojiShowActivity"
+            android:theme="@style/Translucent_NoTitle"></activity>
+
+        <activity android:name=".modules.ipresource.SearchActivity"
+            android:label="@string/search"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+
+        </activity>
+
+        <!--wowo-->
+        <activity
+            android:name=".modules.wowo.PostActivity"
+            android:label="@string/wowo_post"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"></activity>
+
+        <activity android:name=".modules.wowo.DeleteImageActivity" />
+        <activity android:name=".modules.wowo.DeleteFaceActivity" />
+
+        <activity android:name=".modules.wowo.imageloader.SelectPhotoActivity" />
+        <activity android:name=".modules.wowo.EmojisViewPagerActivity" />
+        <activity android:name=".modules.wowo.WowoRulesActivity" />
+
+        <activity
+            android:name=".modules.wowo.PostDetailActivity"
+            android:label="@string/wowo_tz_detail"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+
+        <activity
+            android:name=".modules.wowo.ChattingListActivity"
+            android:label="@string/chat"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <activity
+            android:name=".modules.wowo.WoPostListActivity"
+            android:launchMode="singleTask"></activity>
+
+        <!--login-->
+        <activity
+            android:name=".modules.login.LoginActivity"
+            android:label="@string/login"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"></activity>
+
+        <activity
+            android:name=".modules.login.RegistActivity"
+            android:label="@string/regist"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"></activity>
+
+        <activity
+            android:name=".modules.login.RetrivePasswordActivity"
+            android:label="@string/retrieve_password"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <activity
+            android:name=".modules.login.AgreementActivity"
+            android:label="@string/regist_agreement"></activity>
+
+        <activity
+            android:name=".modules.login.PersonalInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/information_title"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"></activity>
+
+        <activity
+            android:name=".modules.login.SelectCityActivity"
+            android:label="@string/select_city"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".modules.login.AlterZodiacActivity"
+            android:label="@string/i_zodiac"></activity>
+
+        <!--mine-->
+        <activity
+            android:name=".modules.mine.SettingActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".modules.mine.ChangePwdActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".modules.mine.AboutMOINActivity" />
+        <activity android:name=".modules.mine.JudgeActivity" />
+        <activity android:name=".modules.mine.FavoriateIPActivity" />
+        <activity android:name=".modules.mine.MyPostActivity" />
+
+        <activity android:name=".modules.feedback.FeedBackActivity">
+            <intent-filter>
+                <action android:name="com.nqmobile.live.feedback" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".modules.cosplay.ui.DownloadCosplyResActivity"></activity>
+
+        <activity
+            android:name=".modules.mine.MyEmojiActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity android:name=".modules.mine.MyEmojiDetailActivity"></activity>
+
+        <activity
+            android:name=".modules.cosplay.ui.CosplayShareActivity"
+            android:theme="@style/Translucent_NoTitle">
+            >
+        </activity>
+
+        <activity android:name=".modules.cosplay.CosplayEditorActivity"></activity>
+
+
+        <receiver android:name=".commons.receiver.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- 取消监听应用的安装卸载
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="moin.download.push" />
+                <action android:name="moin.click.push" />
+                <action android:name="moin.unlike.push" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".commons.db.DataProvider"
+            android:authorities="com.moinapp.wuliao.dataprovider"
+            android:exported="false" />
+
+        <activity
+            android:name=".modules.cosplay.CosplayShareActivity"
+            android:label="@string/title_activity_cosplay_share_activity"></activity>
+
+        <activity android:name=".modules.cosplay.CosplayMainActivity"></activity>
+
+    </application>
+
+</manifest>

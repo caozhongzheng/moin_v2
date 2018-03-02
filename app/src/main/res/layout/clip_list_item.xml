@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        style="@style/clip_item_rl" >
+
+        <ImageView
+            android:id="@+id/clip"
+            style="@style/clip_item_iv" />
+
+        <ImageView
+            android:id="@+id/play"
+            style="@style/clip_item_play" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/clip_item_rl"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:background="@android:color/white"
+        >
+
+        <ImageView
+            android:id="@+id/clip1"
+            style="@style/clip_item_iv"
+
+            />
+
+        <ImageView
+            android:id="@+id/play1"
+            style="@style/clip_item_play" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/clip_item_rl"
+        android:paddingLeft="1dp"
+        android:paddingRight="2dp"
+        android:background="@android:color/white"
+        >
+
+        <ImageView
+            android:id="@+id/clip2"
+            style="@style/clip_item_iv" />
+
+        <ImageView
+            android:id="@+id/play2"
+            style="@style/clip_item_play" />
+    </RelativeLayout>
+
+</LinearLayout>

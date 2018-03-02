@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7.5dp"
+    android:layout_marginLeft="3.75dp"
+    android:layout_marginRight="3.75dp"
+    android:layout_weight="1.0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.moinapp.wuliao.commons.ui.AsyncImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="110dp"
+            android:layout_height="166dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="166dp"
+            android:maxWidth="110dp"
+            android:scaleType="fitXY"
+            android:background="@color/common_grey"
+            android:src="@drawable/default_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ip_homep_ipname"
+            android:textSize="12sp"
+            android:textColor="@color/common_white"
+            android:id="@+id/tv_name"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ip_homep_type"
+            android:textSize="8sp"
+            android:textColor="@color/common_white"
+            android:id="@+id/desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
